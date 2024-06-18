@@ -3,12 +3,13 @@
 ### จุดประสงค์
 
 * สร้างขั้นตอนการทำงานที่ชัดเจนระหว่าง Designer และ Developer
-* ลดความสับสนที่เกิดจากการทำงานร่วมกันหลายคน หรือการเข้ามาต่องานจากคนอื่น
+* ลดความสับสนและการตัดสินใจที่เกิดจากการทำงานร่วมกันหลายคน หรือการเข้ามาต่องานจากคนที่เริ่มต้นไว้
 * เพิ่มความเร็วของการแก้ไข Theme และการแปลง UI มาเป็น Code
 
 ## สารบัญ
 * [Designer](#designer)
-  - [SECTION_NAME](#section-name)
+  - [การเริ่มต้น Project](#การเริ่มต้น-project)
+  - [การสร้าง Design systems](#การสร้าง-design-systems)
 * [Developer](#developer)
   - [SECTION_NAME](#section-name)
 * [Designer & Developer](#designer-&-developer)
@@ -18,17 +19,26 @@
 
 ### การเริ่มต้น Project
 * Designer รับ CI (Corporate identity) จาก Customer เพื่อทำการออกแบบ Design concept โดยมีองค์ประกอบ คือ Mood & Tone, Layout และ Component
-* หลังจากนำเสนอ, รับ Feedback, แก้ไข และผ่านการยืนยันจาก Customer แล้ว จะเข้าสู่ขั้นตอนการเตรียม Design systems
+* หลังจากนำเสนอ, รับ Feedback, แก้ไข และผ่านการยืนยันจาก Customer แล้ว จะเข้าสู่ขั้นตอนการสร้าง Design systems
+
 ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/design-concept-presentation.png)
 
-### การเตรียม Design systems
-* Designer สร้าง Variables ของ Color, Typography,
-
+### การสร้าง Design systems
+* Designer สร้าง Variables เพื่อใช้อ้างอิงในงาน Design โดยแบ่งเป็น 3 ระดับ คือ
+  - Primitive : การตั้งชื่อให้กับ Design value เพื่อใช้เรียกเท่านั้น เช่น Color, Typography และ Dimension (Width, Height, Padding, Margin, Gap, Spacing, Border width/radius, Shadow width)
+  ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-primitive-color.png)
+  ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-primitive-dimension.png)
+  ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-primitive-typography.png)
+  - Semantic : การตั้งชื่อที่มีความหมายให้กับ Design value เพื่อใช้เรียกและสร้างความเข้าใจร่วมกัน เช่น Status color, Content text color, Icon size เป็นต้น
+  ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-semantic-color-dimension.png)
+  ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-semantic-typography.png)
+  - Specific : การตั้งชื่อที่มีความหมายให้กับ Design value เพื่อใช้เรียกและสร้างความเข้าใจร่วมกัน โดยใช้กับ Component หรือ Element ที่กำหนดไว้เท่านั้น เช่น Button สีต่างๆ และ States ของ Button แต่ละสี เป็นต้น
+  ![Design concept](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-specific-component.png)
 
 ## Developer
 
-### SECTION_NAME
+### Coming soon
 
 ## Designer & Developer
 
-### SECTION_NAME
+### Coming soon
