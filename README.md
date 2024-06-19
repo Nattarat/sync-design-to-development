@@ -93,14 +93,20 @@
 1. Folder structure ที่ใช้สร้าง UI
 
 ```
-├── nuxt.config.ts                    # ใส่ข้อมูล title, description และ link (favicon / Google font)
-├── tailwind.config.js                # ใส่ tailwindcss class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure (Grid / Flex / Container)
-├── assets                            # xxxxx
-│   ├── design-systems                # xxxxx
-│       ├── _embed-typography.scss    # xxxxx
-└── ...
-
-├── bin
+├── 📄 nuxt.config.ts                    # ใส่ข้อมูล title และ description, ตั้งค่า link (favicon / Embed google font)
+├── 📄 tailwind.config.js                # ตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure (Grid / Flex / Container)
+├── 📁 assets
+│   ├── 📁 design-systems
+│       ├── 📄 _variables.scss           # ที่เก็บ Variables ที่แปลงมาจาก variables.json โดยใช้ Library "style-dictionary"
+│       ├── 📄 _specific-variables.scss  # ที่เก็บ Variables ที่มีความเฉพาะในเชิง Development เช่น rem reference, Site container, Z Index, Media query, Transition เป็นต้น
+│       ├── 📄 _embed-typography.scss    # ตั้งค่า Font family ที่ไม่มีใน Google font โดยการนำไฟล์ *.ttf, *.otf มา Embed เอง
+│       ├── 📄 _typography.scss          # ตั้งค่า Text style ตาม Document ของ Typography ใน Design systems
+│       ├── 📄 _mixins.scss              # ที่เก็บ CSS function (Group CSS property)
+│       ├── 📄 _scaffolding.scss         # ตั้งค่า CSS property ของ HTML tags
+│       ├── 📄 design-systems.scss       # ตั้งค่า Import โดยเรียงลำดับในการเรียกใช้งาน และการ Overwrite style
+│       ├── 📄 variables.json            # ไฟล์ json ที่ได้รับมาจาก Designer ซึ่งเก็บ Variables (Object) ไว้ นำไปแปลงเป็น Variables (SCSS) โดยใช้ Library "style-dictionary" ที่ตั้ง Command ไว้ คือ "npm run style"
+├── 📁 tailwindcss
+│   ├── 📄 tailwindcss.css               # ตั้งค่าใช้งาน Tailwind CSS with Nuxt ตาม [Document](https://tailwindcss.com/docs/guides/nuxtjs)
 ├── boot
 │   └── grub
 │       ├── fonts
