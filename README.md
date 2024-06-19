@@ -178,6 +178,9 @@
 
   - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ variable name [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1s6WNy88OMn6jb6juE0LnixtqNVTu7CRQ/view?usp=sharing)
 
+  ![Finished add variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/finished-add-variable-button-text.png)
+
+
 ### การตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure
 * Coming soon
 
