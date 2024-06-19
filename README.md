@@ -8,11 +8,11 @@
 
 ## สารบัญ
 * [Designer](#designer)
-  - [การเริ่มต้น Project](#การเริ่มต้น-project)
+  - [การเริ่มต้น Design project](#การเริ่มต้น-design-project)
   - [การสร้าง Design systems](#การสร้าง-design-systems)
   - [การแปลง Variables เป็นไฟล์ json เพื่อส่งต่อให้ Developer](#การแปลง-variables-เป็นไฟล์-json-เพื่อส่งต่อให้-developer)
 * [Developer](#developer)
-  - [SECTION_NAME](#section-name)
+  - [การเริ่มต้น Develop project](#การเริ่มต้น-develop-project)
 * [Designer & Developer](#designer-&-developer)
   - [SECTION_NAME](#section-name)
 
@@ -87,10 +87,38 @@
 
 ![Token studio](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/tokens-studio-9.png)
 
-
-
-
 ## Developer
+
+### การเริ่มต้น Develop project
+1. Folder structure ที่ใช้สร้าง UI
+
+```
+├── nuxt.config.ts                    # ใส่ข้อมูล title, description และ link (favicon / Google font)
+├── tailwind.config.js                # ใส่ tailwindcss class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure (Grid / Flex / Container)
+├── assets                            # xxxxx
+│   ├── design-systems                # xxxxx
+│       ├── _embed-typography.scss    # xxxxx
+└── ...
+
+├── bin
+├── boot
+│   └── grub
+│       ├── fonts
+│       └── locale
+├── cdrom
+└── dev
+    ├── block
+    ├── bsg
+    └── bus
+        └── usb
+            ├── 001
+            └── 002
+```
+
+2. nuxt.config.ts
+  - ใส่ข้อมูล "title"
+  - ใส่ข้อมูล "description"
+  - ใส่ข้อมูล "link" ได้แก่ favicon และ Google font
 
 ### Coming soon
 
