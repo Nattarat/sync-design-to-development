@@ -93,40 +93,43 @@
 1. Folder structure ที่ใช้สร้าง UI
 
 ```
-├── 📄 nuxt.config.ts                    # ใส่ข้อมูล title และ description, ตั้งค่า link (favicon / Embed google font)
+├── 📄 nuxt.config.ts                    # ใส่ข้อมูล title และ description, ตั้งค่า link (favicon / Embed google font) และเรียกใช้ Vue library
 ├── 📄 tailwind.config.js                # ตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure (Grid / Flex / Container)
 ├── 📁 assets
 │   ├── 📁 design-systems
-│       ├── 📄 _variables.scss           # ที่เก็บ Variables ที่แปลงมาจาก variables.json โดยใช้ Library "style-dictionary"
-│       ├── 📄 _specific-variables.scss  # ที่เก็บ Variables ที่มีความเฉพาะในเชิง Development เช่น rem reference, Site container, Z Index, Media query, Transition เป็นต้น
-│       ├── 📄 _embed-typography.scss    # ตั้งค่า Font family ที่ไม่มีใน Google font โดยการนำไฟล์ *.ttf, *.otf มา Embed เอง
-│       ├── 📄 _typography.scss          # ตั้งค่า Text style ตาม Document ของ Typography ใน Design systems
-│       ├── 📄 _mixins.scss              # ที่เก็บ CSS function (Group CSS property)
-│       ├── 📄 _scaffolding.scss         # ตั้งค่า CSS property ของ HTML tags
-│       ├── 📄 design-systems.scss       # ตั้งค่า Import โดยเรียงลำดับในการเรียกใช้งาน และการ Overwrite style
-│       ├── 📄 variables.json            # ไฟล์ json ที่ได้รับมาจาก Designer ซึ่งเก็บ Variables (Object) ไว้ นำไปแปลงเป็น Variables (SCSS) โดยใช้ Library "style-dictionary" ที่ตั้ง Command ไว้ คือ "npm run style"
-├── 📁 tailwindcss
-│   ├── 📄 tailwindcss.css               # ตั้งค่าใช้งาน Tailwind CSS with Nuxt ตาม [Document](https://tailwindcss.com/docs/guides/nuxtjs)
-├── boot
-│   └── grub
-│       ├── fonts
-│       └── locale
-├── cdrom
-└── dev
-    ├── block
-    ├── bsg
-    └── bus
-        └── usb
-            ├── 001
-            └── 002
+│   │   ├── 📄 _variables.scss           # ที่เก็บ Variables ที่แปลงมาจาก variables.json โดยใช้ Library "style-dictionary"
+│   │   ├── 📄 _specific-variables.scss  # ที่เก็บ Variables ที่มีความเฉพาะในเชิง Development เช่น rem reference, Site container, Z Index, Media query, Transition เป็นต้น
+│   │   ├── 📄 _embed-typography.scss    # ตั้งค่า Font family ที่ไม่มีใน Google font โดยการนำไฟล์ *.ttf หรือ *.otf มา Embed เอง
+│   │   ├── 📄 _typography.scss          # ตั้งค่า Text style ตาม Document ของ Typography ใน Design systems
+│   │   ├── 📄 _mixins.scss              # ที่เก็บ CSS function (Group CSS property)
+│   │   ├── 📄 _scaffolding.scss         # ตั้งค่า CSS property ของ HTML tags
+│   │   ├── 📄 design-systems.scss       # ตั้งค่า Import โดยเรียงลำดับในการเรียกใช้งาน และการ Overwrite style
+│   │   └── 📄 variables.json            # ไฟล์ json ที่ได้รับมาจาก Designer ซึ่งเก็บ Variables (Object) ไว้ นำไปแปลงเป็น Variables (SCSS) โดยใช้ Library "style-dictionary" ที่ตั้ง Command ไว้ คือ "npm run style"
+├── ├── 📁 tailwindcss
+│   │   └── 📄 tailwindcss.css           # ตั้งค่าใช้งาน Tailwind CSS with Nuxt ตาม https://tailwindcss.com/docs/guides/nuxtjs
+├── └── 📄 style-global.scss             # ที่เก็บ Class ของ Semantic text style (Display / Title / Label / Body) และ Utility classes ที่ใช้งานทั่วไป (* แนะนำว่าถ้าไม่จำเป็นไม่ควรมาสร้างไว้ เพราะ Tailwind CSS มี Support ไว้หมดแล้ว)
+├── 📁 components
+│   ├── 📁 Button
+│   │   └── 📄 Button.vue                # ไฟล์ Vue component โดย Structure แบ่งเป็น 3 ส่วน คือ Template (HTML), Script (JS) และ Style (SCSS)
+├── └── 📄 components.ts                 # ตั้งค่า Import Vue component ไปใช้งาน
+├── 📁 layouts
+├── └── 📄 default.vue                   # ไฟล์ Vue component ที่ทำหน้าที่เป็น Layout ของ Page
+├── 📁 pages
+├── └── 📄 index.vue                     # ไฟล์ Vue component ที่ทำหน้าที่เป็น Page โดยมีการเรียกใช้ Layout ตามที่กำหนดไว้
+├── 📁 plugins
+├── └── 📄 vue-notification.ts           # ตั้งค่า Import Vue library ไปใช้งาน
+└── 📁 plublic
+    ├── 📁 favicons                      # ที่เก็บไฟล์รูป favicon
+    ├── 📁 fonts                         # ที่เก็บไฟล์ Font family (*.ttf หรือ *.otf) ที่ไม่มีใน Google font
+    ├── 📁 images
+    │   ├── 📁 contents                  # ที่เก็บไฟล์รูป Mockup ของ Content ที่ต้องดึงจาก API มาแสดง เช่น Profile image, Product เป็นต้น
+    ├── 📁 graphics                  # ที่เก็บไฟล์รูป Decoration ของ Design เช่น Pattern, Illustration เป็นต้น
+    ├── 📁 icons                     # ที่เก็บไฟล์รูป Icon (แนะนำ Export เป็น svg และ png เพื่อให้สามารถดู Preview แบบ Thumbnail ได้)
+    ├── 📁 logos                     # ที่เก็บไฟล์รูป Logo (แนะนำ Export เป็น svg และ png เพื่อให้สามารถดู Preview แบบ Thumbnail ได้)
+    ├── 📁 placeholder               # ที่เก็บไฟล์รูป Placeholder (รูปที่ใช้แทนกรณียังไม่มีข้อมูล)
+    └── 📄 manifest.json                 # ตั้งค่า Icon, Title, Description บนหน้า Home Screen เมื่อผู้ใช้งาน Mobile กดปุ่ม Add to home Screen และกำหนดให้เว็บไซต์เป็นแบบ Full screen mode ไม่มี Address bar ซึ่งจะทำให้การแสดงผลมีความใกล้เคียงกับแอปพลิเคชั่น ควบคุมมุมมองแนวตั้ง แนวนอนของเว็บได้ กำหนดสีและ Splash screen ได้
 ```
-
-2. nuxt.config.ts
-  - ใส่ข้อมูล "title"
-  - ใส่ข้อมูล "description"
-  - ใส่ข้อมูล "link" ได้แก่ favicon และ Google font
-
-### Coming soon
+2. การนำ variables.json มาแปลงเป็น SCSS variables
 
 ## Designer & Developer
 
