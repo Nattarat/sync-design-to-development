@@ -43,7 +43,7 @@
 2. สร้าง Component โดยใช้ Variables กับ Design value ทุกค่า ซึ่งจะไม่มี Raw design value (Hardcode) เกิดขึ้น
 
 ![Component](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/component.png)
-![Component with variable](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/component-with-variable.png)
+![Component with variable](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/component-with-variables.png)
 
 ## Developer
 
