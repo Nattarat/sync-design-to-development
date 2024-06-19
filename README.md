@@ -163,16 +163,20 @@
 
 ![CSS parent style](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/css-parent-style.png)
 
-* View variables ที่ถูกใช้กับ Container text ของ Button และทำการ Copy ค่า Variables ของ Layout มาใช้
+* ดู variables ที่ถูกใช้กับ Container text ของ Button และทำการ Copy ค่า Variables ของ Layout มาใช้
 
 ![Inspect variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/inspect-variable-button-text.png)
 
 * ที่ Children style เขียน CSS Class ของ Container text เพื่อสร้างระยะห่างของ Front/Back icon กับ Text
   - Paste ค่า Variables ของ Layout
+
   ![Copy paste variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/copy-paste-variable-button-text.png)
+
   - ลบ CSS properties ที่ไม่ใช้ออกไป
+
   ![Delete unused css properties button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-text.png)
-  - นำ Variables มาใช้งาน [Video](https://drive.google.com/file/d/1s6WNy88OMn6jb6juE0LnixtqNVTu7CRQ/view?usp=sharing)
+
+  - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ variable name [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1s6WNy88OMn6jb6juE0LnixtqNVTu7CRQ/view?usp=sharing)
 
 ### การตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure
 * Coming soon
