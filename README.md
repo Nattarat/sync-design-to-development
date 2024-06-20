@@ -198,6 +198,7 @@
   ![Delete unused css properties button size](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-size.png)
 
   - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ Variable name [7] ลบ Dollar sign ที่เกินมาออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1qiUDOhcQ8_9tokl0rDuZywoKCkZkD0IE/view?usp=drive_link)
+    - สำหรับ Button ให้เปลี่ยน width เป็น min-width เพื่อให้เกิด Consistency ของความกว้างปุ่ม (จะไม่ปล่อยให้ปุ่มมีความกว้างตามตัวอักษร แต่ในบางกรณีถ้าจำเป็น เพราะ พื้นที่ไม่พอก็สามารถทำได้)
 
   - ดู variables ที่ถูกใช้กับ Container ของ Button ขนาด Medium และทำการ Copy ค่า Variables ของ Text มาใช้
 
@@ -209,9 +210,10 @@
 
   - ลบ CSS properties ที่ไม่ใช้ออกไป
 
-  ![Delete unused css properties button size](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-size-text.png)
+  ![Delete unused css properties button size text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-size-text.png)
 
   - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ Variable name [7] ลบ Dollar sign ที่เกินมาออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1bi8EbNyShhszfNHvUiCRNRr_osrEjmJE/view?usp=drive_link)
+    - เลข 400 ของ Font weight ไม่ใช้ Variable เพราะ Style dictionary แปลง 400 มาเป็น rem unit ซึ่งนำมาใช้เป็น Value ของ Font weight ไม่ได้
 
   - ในกรณีตั้งค่า Text style (ระดับ Primitive และ Semantic) ตาม Document ของ Typography ใน Design systems เรียบร้อยแล้ว สามารถข้ามขั้นตอนการนำ Variables มาใช้งานตรงๆ ได้เลย โดยการใช้ mixins แทน ซึ่งทำตามขั้นตอน ดังนี้ [1] หลังจาก Copy & Paste ค่า Variables ของ Text มาแล้วให้ลบ CSS properties ออก [2] Copy Text style name ที่เป็น Comment และมีลักษณะ "semantic/body/md-leading-none" [3] พิมพ์ @include [4] Paste text style name [5] กด Ctrl + Spacebar [6] เลือก Mixins ที่แนะนำขึ้นมาให้ตรงกับ Text style name [7] ลบ Text ที่อยู่ด้านของ typography/... ออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1HAP61CANxI5SX_kIFopzlPNQ9kRb8eMl/view?usp=drive_link)
 
