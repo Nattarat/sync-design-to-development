@@ -16,8 +16,8 @@
   - [การสร้าง Component โดยอ้างอิง Variables จาก Design systems](#การสร้าง-component-โดยอ้างอิง-variables-จาก-design-systems)
   - [การตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure](#การตั้งค่า-tailwind-css-class-เพิ่มเติมจาก-variables-เพื่อใช้สร้าง-layout-structure)
   - [การตั้งค่า Text style (ระดับ Primitive และ Semantic) ตาม Document ของ Typography ใน Design systems](#การตั้งค่า-text-style-(ระดับ-primitive-และ-semantic)-ตาม-document-ของ-typography-ใน-design-systems)
-* [Designer & Developer](#designer-&-developer)
-  - [SECTION_NAME](#section-name)
+* [Developer & Designer decision](#developer-&-designer-decision)
+  - [Scope ของการใช้ Tailwind CSS class และ Local (Page) style](#scope-ของการใช้-tailwind-css-class-และ-local-(page)-style)
 
 ## Designer
 
@@ -153,9 +153,9 @@
 
 * CSS structure แบ่งออกเป็น 4 ส่วน คือ Parent style, Children style, Modifier style และ Other component style
   - Parent style   : CSS ของ HTML ที่เป็น Component main container
-  - Children style : CSS Class ของ HTML ที่อยู่ภายใน Component main container
-  - Modifier style : CSS Class เสริมของ Component main container เขียนเพื่อ Overwrite CSS ของ Component main container และ CSS class ของ HTML ที่อยู่ภายใน Component main container ตัวอย่างเช่น &.color-small {...} ที่ใช้เปลี่ยนขนาด, &.color-red {...} ที่ใช้เปลี่ยนสี เป็นต้น
-  - Other component style : CSS Class ของ Component อื่น ที่ถูกนำมาอยู่ภายใน Component main container
+  - Children style : CSS class ของ HTML ที่อยู่ภายใน Component main container
+  - Modifier style : CSS class เสริมของ Component main container เขียนเพื่อ Overwrite CSS ของ Component main container และ CSS class ของ HTML ที่อยู่ภายใน Component main container ตัวอย่างเช่น &.color-small {...} ที่ใช้เปลี่ยนขนาด, &.color-red {...} ที่ใช้เปลี่ยนสี เป็นต้น
+  - Other component style : CSS class ของ Component อื่น ที่ถูกนำมาอยู่ภายใน Component main container
 
 ![CSS strusture](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/css-structure.png)
 
@@ -163,11 +163,11 @@
 
 ![CSS parent style](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/css-parent-style.png)
 
-* ดู variables ที่ถูกใช้กับ Container text ของ Button และทำการ Copy ค่า Variables ของ Layout มาใช้
+* ที่ Children style เขียน CSS class ของ Container text เพื่อสร้างระยะห่างของ Front/Back icon กับ Text
+  - ดู variables ที่ถูกใช้กับ Container text ของ Button และทำการ Copy ค่า Variables ของ Layout มาใช้
 
-![Inspect variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/inspect-variable-button-text.png)
+  ![Inspect variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/inspect-variable-button-text.png)
 
-* ที่ Children style เขียน CSS Class ของ Container text เพื่อสร้างระยะห่างของ Front/Back icon กับ Text
   - Paste ค่า Variables ของ Layout
 
   ![Copy paste variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/copy-paste-variable-button-text.png)
@@ -176,10 +176,44 @@
 
   ![Delete unused css properties button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-text.png)
 
-  - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ variable name [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1s6WNy88OMn6jb6juE0LnixtqNVTu7CRQ/view?usp=sharing)
+  - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ Variable name [7] ลบ Dollar sign ที่เกินมาออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1s6WNy88OMn6jb6juE0LnixtqNVTu7CRQ/view?usp=drive_link)
 
   ![Finished add variable button text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/finished-add-variable-button-text.png)
 
+* ที่ Modifier style
+  - เขียน CSS class ขนาด Medium ของ Button
+
+  ![CSS parent style](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/css-modifier-style-blank.png)
+
+  - ดู variables ที่ถูกใช้กับ Container ของ Button ขนาด Medium และทำการ Copy ค่า Variables ของ Layout มาใช้
+
+  ![Inspect variable button size](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/inspect-variable-button-size.png)
+
+  - Paste ค่า Variables ของ Layout
+
+  ![Copy paste variable button size](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/copy-paste-variable-button-size.png)
+
+  - ลบ CSS properties ที่ไม่ใช้ออกไป
+
+  ![Delete unused css properties button size](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-size.png)
+
+  - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ Variable name [7] ลบ Dollar sign ที่เกินมาออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1qiUDOhcQ8_9tokl0rDuZywoKCkZkD0IE/view?usp=drive_link)
+
+  - ดู variables ที่ถูกใช้กับ Container ของ Button ขนาด Medium และทำการ Copy ค่า Variables ของ Text มาใช้
+
+  ![Inspect variable button size text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/inspect-variable-button-size-text.png)
+
+  - Paste ค่า Variables ของ Text
+
+  ![Copy paste variable button size text](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/copy-paste-variable-button-size-text.png)
+
+  - ลบ CSS properties ที่ไม่ใช้ออกไป
+
+  ![Delete unused css properties button size](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/delete-unused-css-properties-button-size-text.png)
+
+  - นำ Variables มาใช้งาน โดยทำตามขั้นตอน ดังนี้ [1] Cut variable name [2] ลบ Var(--) [3] พิมพ์ $ [4] Paste variable name [5] กด Ctrl + Spacebar [6] เลือก Variable ที่แนะนำขึ้นมาให้ตรงกับ Variable name [7] ลบ Dollar sign ที่เกินมาออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1bi8EbNyShhszfNHvUiCRNRr_osrEjmJE/view?usp=drive_link)
+
+  - ในกรณีตั้งค่า Text style (ระดับ Primitive และ Semantic) ตาม Document ของ Typography ใน Design systems เรียบร้อยแล้ว สามารถข้ามขั้นตอนการนำ Variables มาใช้งานตรงๆ ได้เลย โดยการใช้ mixins แทน ซึ่งทำตามขั้นตอน ดังนี้ [1] หลังจาก Copy & Paste ค่า Variables ของ Text มาแล้วให้ลบ CSS properties ออก [2] Copy Text style name ที่เป็น Comment และมีลักษณะ "semantic/body/md-leading-none" [3] พิมพ์ @include [4] Paste text style name [5] กด Ctrl + Spacebar [6] เลือก Mixins ที่แนะนำขึ้นมาให้ตรงกับ Text style name [7] ลบ Text ที่อยู่ด้านของ typography/... ออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1HAP61CANxI5SX_kIFopzlPNQ9kRb8eMl/view?usp=drive_link)
 
 ### การตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure
 * Coming soon
@@ -187,6 +221,10 @@
 ### การตั้งค่า Text style (ระดับ Primitive และ Semantic) ตาม Document ของ Typography ใน Design systems
 * Coming soon
 
-## Designer & Developer
+## Developer & Designer decision
 
-### Coming soon
+### Scope ของการใช้ Tailwind CSS class และ Local (Page) style
+* Coming soon
+  - แบ่งการใช้งาน Grid และ Flex ให้ชัดเจน
+  - ควรใช้ div เปล่าๆ เพื่อบ่งบอกว่าเป็น Layout structure (Row, Column) หรือไม่ เพราะ การนำ Content มาวางโดยตรงจะโดน Children style ของ Parent (Grid / Flex) กระทบได้ นอกจากนี้ การ Overwrite style โดยไม่ตั้งใจของ Content อาจจะกระทบ Children style ของ Parent (Grid / Flex) ได้ด้วยเช่นกัน [Tradeoff คือ Nesting html เยอะขึ้น แต่ก็ทำให้สังเกต Layout structure (Row, Column) ได้ง่ายขึ้นตอบแทนกลับมา]
+  - Local (Page) style ควรใช้กับ Reuse UI ไม่เช่นนั้นเวลาแก้ไขต้องไปไล่แก้ที่ Tailwind CSS class ทุกที่
