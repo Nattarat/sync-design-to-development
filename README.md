@@ -127,10 +127,10 @@
     ├── 📁 fonts                         # ที่เก็บไฟล์ Font family (*.ttf หรือ *.otf) ที่ไม่มีใน Google font
     ├── 📁 images
     │   ├── 📁 contents                  # ที่เก็บไฟล์รูป Mockup ของ Content ที่ต้องดึงจาก API มาแสดง เช่น Profile image, Product เป็นต้น
-    ├── 📁 graphics                      # ที่เก็บไฟล์รูป Decoration ของ Design เช่น Pattern, Illustration เป็นต้น
-    ├── 📁 icons                         # ที่เก็บไฟล์รูป Icon (แนะนำ Export เป็น svg และ png เพื่อให้สามารถดู Preview แบบ Thumbnail ได้)
-    ├── 📁 logos                         # ที่เก็บไฟล์รูป Logo (แนะนำ Export เป็น svg และ png เพื่อให้สามารถดู Preview แบบ Thumbnail ได้)
-    ├── 📁 placeholder                   # ที่เก็บไฟล์รูป Placeholder (รูปที่ใช้แทนกรณียังไม่มีข้อมูล)
+    │   ├── 📁 graphics                  # ที่เก็บไฟล์รูป Decoration ของ Design เช่น Pattern, Illustration เป็นต้น
+    │   ├── 📁 icons                     # ที่เก็บไฟล์รูป Icon (แนะนำ Export เป็น svg และ png เพื่อให้สามารถดู Preview แบบ Thumbnail ได้)
+    │   ├── 📁 logos                     # ที่เก็บไฟล์รูป Logo (แนะนำ Export เป็น svg และ png เพื่อให้สามารถดู Preview แบบ Thumbnail ได้)
+    │   ├── 📁 placeholder               # ที่เก็บไฟล์รูป Placeholder (รูปที่ใช้แทนกรณียังไม่มีข้อมูล)
     └── 📄 manifest.json                 # ตั้งค่า Icon, Title, Description บนหน้า Home Screen เมื่อผู้ใช้งาน Mobile กดปุ่ม Add to home Screen และกำหนดให้เว็บไซต์เป็นแบบ Full screen mode ไม่มี Address bar ซึ่งจะทำให้การแสดงผลมีความใกล้เคียงกับแอปพลิเคชั่น ควบคุมมุมมองแนวตั้ง แนวนอนของเว็บได้ กำหนดสีและ Splash screen ได้
 ```
 2. การนำ variables.json มาแปลงเป็น SCSS variables
