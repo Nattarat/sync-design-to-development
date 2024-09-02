@@ -2660,6 +2660,48 @@
         "type": "dimension"
       }
     },
+    "carousel": {
+      "foreground-pagination": {
+        "value": "{color.primary.16}",
+        "type": "color"
+      },
+      "foreground-pagination-inactive": {
+        "value": "{color.secondary-16.s-100}",
+        "type": "color"
+      },
+      "background-image": {
+        "value": "{color.secondary-2.s-100}",
+        "type": "color"
+      },
+      "foreground-icon-placeholder-image": {
+        "value": "{color.secondary-2.s-200}",
+        "type": "color"
+      },
+      "size-pagination": {
+        "value": "{dimension.2d5}",
+        "type": "dimension"
+      },
+      "size-pagination-inactive": {
+        "value": "{dimension.1d5}",
+        "type": "dimension"
+      },
+      "space-pagination": {
+        "value": "{space-x.2d5}",
+        "type": "dimension"
+      },
+      "size-icon-placeholder-image": {
+        "value": "{dimension.18}",
+        "type": "dimension"
+      },
+      "space-image-pagination": {
+        "value": "{space-y.4}",
+        "type": "dimension"
+      },
+      "size-icon-placeholder-image-small": {
+        "value": "{dimension.8}",
+        "type": "dimension"
+      }
+    },
     "checkbox": {
       "size-icon": {
         "value": "{dimension.3}",
