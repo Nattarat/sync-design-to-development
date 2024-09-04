@@ -2702,6 +2702,158 @@
         "type": "dimension"
       }
     },
+    "steps": {
+      "background": {
+        "container-number-enabled": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        },
+        "container-completed": {
+          "value": "{color.primary.13}",
+          "type": "color"
+        }
+      },
+      "foreground": {
+        "text-number-enabled": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "text-title-enabled": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        },
+        "text-title-completed": {
+          "value": "{color.primary.13}",
+          "type": "color"
+        },
+        "border-connector-disabled": {
+          "value": "{color.secondary-16.s-200}",
+          "type": "color"
+        },
+        "icon-completed": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "text-description-enabled": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        },
+        "text-description-completed": {
+          "value": "{color.primary.13}",
+          "type": "color"
+        },
+        "text-title-disabled": {
+          "value": "{color.secondary-16.s-200}",
+          "type": "color"
+        },
+        "text-description-disabled": {
+          "value": "{color.secondary-16.s-200}",
+          "type": "color"
+        },
+        "border-connector-completed": {
+          "value": "{color.primary.13}",
+          "type": "color"
+        },
+        "text-number-disabled": {
+          "value": "{color.secondary-16.s-200}",
+          "type": "color"
+        }
+      },
+      "font-family": {
+        "title": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        },
+        "description": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        },
+        "number": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        }
+      },
+      "size": {
+        "container-number": {
+          "value": "{dimension.10}",
+          "type": "dimension"
+        }
+      },
+      "border": {
+        "container-number": {
+          "value": "{border.0d5}",
+          "type": "dimension"
+        },
+        "connector": {
+          "value": "{border.0d5}",
+          "type": "dimension"
+        }
+      },
+      "rounded": {
+        "container-number": {
+          "value": "{rounded.md}",
+          "type": "dimension"
+        }
+      },
+      "space-x": {
+        "number-title": {
+          "value": "{space-x.2}",
+          "type": "dimension"
+        },
+        "number-connector": {
+          "value": "{space-x.3}",
+          "type": "dimension"
+        }
+      },
+      "space-y": {
+        "title-description": {
+          "value": "{space-y.1}",
+          "type": "dimension"
+        }
+      },
+      "font-weight": {
+        "title": {
+          "value": "{typography.font-weight.bold}",
+          "type": "dimension"
+        },
+        "description": {
+          "value": "{typography.font-weight.regular}",
+          "type": "dimension"
+        },
+        "number": {
+          "value": "{typography.font-weight.bold}",
+          "type": "dimension"
+        }
+      },
+      "font-size": {
+        "title": {
+          "value": "{typography.font-size.xl}",
+          "type": "dimension"
+        },
+        "description": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        },
+        "number": {
+          "value": "{typography.font-size.xl}",
+          "type": "dimension"
+        }
+      },
+      "line-height": {
+        "title": {
+          "value": "{typography.line-height.xl-leading-none}",
+          "type": "dimension"
+        },
+        "description": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        },
+        "number": {
+          "value": "{typography.line-height.xl-leading-none}",
+          "type": "dimension"
+        }
+      }
+    },
     "checkbox": {
       "size-icon": {
         "value": "{dimension.3}",
