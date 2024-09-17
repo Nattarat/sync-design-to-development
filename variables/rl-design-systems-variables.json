@@ -1778,12 +1778,173 @@
     }
   },
   "specific": {
-    "button": {
-      "primary": {
-        "background": {
+    "datepicker": {
+      "background": {
+        "date-current": {
           "value": "{color.secondary-16.s-500}",
           "type": "color"
         },
+        "date-adjacent-month-hover": {
+          "value": "{color.secondary-2.s-200}",
+          "type": "color"
+        },
+        "calendar": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "date-current-hover": {
+          "value": "{color.secondary-16.s-700}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{color.secondary-2.s-300}",
+          "type": "color"
+        },
+        "input": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "date-hover": {
+          "value": "{color.secondary-2.s-200}",
+          "type": "color"
+        }
+      },
+      "foreground": {
+        "text-date-current": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "text-date": {
+          "value": "{color.secondary-1.s-900}",
+          "type": "color"
+        },
+        "text-date-adjacent-month": {
+          "value": "{color.secondary-1.s-400}",
+          "type": "color"
+        },
+        "border-date-selected": {
+          "value": "{color.secondary-16.s-300}",
+          "type": "color"
+        },
+        "icon-inactive": {
+          "value": "{color.secondary-4.s-400}",
+          "type": "color"
+        },
+        "text-link": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        },
+        "text-date-disable": {
+          "value": "{color.secondary-2.s-300}",
+          "type": "color"
+        },
+        "text-date-week": {
+          "value": "{color.secondary-1.s-400}",
+          "type": "color"
+        },
+        "border-date-selected-focus": {
+          "value": "{color.secondary-16.s-300}",
+          "type": "color"
+        },
+        "text-header": {
+          "value": "{color.secondary-1.s-900}",
+          "type": "color",
+          "description": "Text month, year"
+        }
+      },
+      "font-family": {
+        "text": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        }
+      },
+      "font-size": {
+        "date": {
+          "value": "{typography.font-size.sm}",
+          "type": "dimension"
+        },
+        "body": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        }
+      },
+      "font-weight": {
+        "text": {
+          "value": "{typography.font-weight.regular}",
+          "type": "dimension"
+        }
+      },
+      "size": {
+        "date": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        },
+        "icon-arrow-month": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        },
+        "icon-arrow-month-select": {
+          "value": "{dimension.5}",
+          "type": "dimension"
+        },
+        "icon-arrow-year": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        }
+      },
+      "line-height": {
+        "date": {
+          "value": "{typography.line-height.sm-leading-none}",
+          "type": "dimension"
+        },
+        "body": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        }
+      },
+      "border": {
+        "date": {
+          "value": "{border.pixel}",
+          "type": "dimension"
+        }
+      },
+      "padding": {
+        "header-horizontal": {
+          "value": "{px.2}",
+          "type": "dimension"
+        },
+        "header-vertical": {
+          "value": "{py.2}",
+          "type": "dimension"
+        }
+      },
+      "space-x": {
+        "header": {
+          "value": "{space-x.4}",
+          "type": "dimension"
+        },
+        "month-year": {
+          "value": "{space-x.3}",
+          "type": "dimension"
+        },
+        "month-icon-arrow": {
+          "value": "{space-x.0d5}",
+          "type": "dimension"
+        },
+        "year-icon-arrow": {
+          "value": "{space-x.0d5}",
+          "type": "dimension"
+        }
+      },
+      "rounded": {
+        "date": {
+          "value": "{rounded.full}",
+          "type": "dimension"
+        }
+      }
+    },
+    "button": {
+      "primary": {
         "foreground": {
           "value": "{color.base.white}",
           "type": "color"
@@ -2850,6 +3011,328 @@
         },
         "number": {
           "value": "{typography.line-height.xl-leading-none}",
+          "type": "dimension"
+        }
+      }
+    },
+    "timepicker": {
+      "foreground": {
+        "text-time-default": {
+          "value": "{color.secondary-1.s-900}",
+          "type": "color"
+        },
+        "text-time-selected": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "text-link": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "time-hover": {
+          "value": "{color.secondary-2.s-200}",
+          "type": "color"
+        },
+        "time-selected": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        },
+        "time-background": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "footer-button": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        }
+      },
+      "font-family": {
+        "text": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        }
+      },
+      "rounded": {
+        "button": {
+          "value": "{dimension.1d5}",
+          "type": "dimension"
+        }
+      },
+      "font-weight": {
+        "text": {
+          "value": "{typography.font-weight.regular}",
+          "type": "dimension"
+        }
+      },
+      "font-size": {
+        "time": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        }
+      },
+      "size": {
+        "date": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        },
+        "icon-arrow-month": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        },
+        "icon-arrow-month-select": {
+          "value": "{dimension.5}",
+          "type": "dimension"
+        },
+        "icon-arrow-year": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        }
+      },
+      "line-height": {
+        "time": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        }
+      },
+      "padding": {
+        "time-item": {
+          "value": "{px.3d5}",
+          "type": "dimension"
+        }
+      },
+      "space-x": {
+        "footer": {
+          "value": "{space-x.3}",
+          "type": "dimension"
+        }
+      },
+      "space-y": {
+        "footer": {
+          "value": "{space-y.2}",
+          "type": "dimension"
+        },
+        "body": {
+          "value": "{space-y.1}",
+          "type": "dimension"
+        }
+      }
+    },
+    "file-input": {
+      "background": {
+        "container": {
+          "value": "{color.secondary-1.s-50}",
+          "type": "color"
+        },
+        "container-icon-delete": {
+          "value": "{color.primary.6}",
+          "type": "color"
+        }
+      },
+      "foreground": {
+        "border-container": {
+          "value": "{color.secondary-1.s-300}",
+          "type": "color"
+        },
+        "icon-upload": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        },
+        "title": {
+          "value": "{color.secondary-1.s-800}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{color.secondary-1.s-700}",
+          "type": "color"
+        },
+        "border-image-thumbnail": {
+          "value": "{color.secondary-1.s-200}",
+          "type": "color"
+        },
+        "file-name": {
+          "value": "{color.secondary-1.s-700}",
+          "type": "color"
+        },
+        "icon-view": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        },
+        "icon-delete": {
+          "value": "{color.primary.6}",
+          "type": "color"
+        },
+        "icon-delete-image-thumbnail": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "icon-view-image-thumbnail": {
+          "value": "{color.base.white}",
+          "type": "color"
+        }
+      },
+      "font-family": {
+        "text": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        }
+      },
+      "rounded": {
+        "container": {
+          "value": "{rounded.lg}",
+          "type": "dimension"
+        },
+        "container-image-thumbnail-list": {
+          "value": "{rounded.rounded}",
+          "type": "dimension"
+        },
+        "container-image-thumbnail": {
+          "value": "{rounded.lg}",
+          "type": "dimension"
+        },
+        "container-icon-delete": {
+          "value": "{rounded.md}",
+          "type": "dimension"
+        }
+      },
+      "border": {
+        "container": {
+          "value": "{dimension.pixel}",
+          "type": "dimension"
+        },
+        "container-image-thumbnail": {
+          "value": "{dimension.pixel}",
+          "type": "dimension"
+        }
+      },
+      "size": {
+        "icon-upload": {
+          "value": "{dimension.9}",
+          "type": "dimension"
+        },
+        "icon-action-file-list": {
+          "value": "{dimension.4d5}",
+          "type": "dimension"
+        },
+        "image-thumbnail": {
+          "value": "{dimension.8}",
+          "type": "dimension"
+        },
+        "icon-delete-image-thumbnail": {
+          "value": "{dimension.4d5}",
+          "type": "dimension"
+        },
+        "icon-view-image-thumbnail": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        }
+      },
+      "padding": {
+        "container-px": {
+          "value": "{px.8}",
+          "type": "dimension"
+        },
+        "container-pt": {
+          "value": "{px.7}",
+          "type": "dimension"
+        },
+        "container-pb": {
+          "value": "{px.8}",
+          "type": "dimension"
+        },
+        "container-thumbnail-px": {
+          "value": "{px.4}",
+          "type": "dimension"
+        },
+        "container-thumbnail-pt": {
+          "value": "{px.4}",
+          "type": "dimension"
+        },
+        "container-thumbnail-pb": {
+          "value": "{px.5}",
+          "type": "dimension"
+        }
+      },
+      "space-y": {
+        "container": {
+          "value": "{dimension.3}",
+          "type": "dimension"
+        },
+        "container-title-description": {
+          "value": "{dimension.1d5}",
+          "type": "dimension"
+        },
+        "container-thumbnail": {
+          "value": "{dimension.2}",
+          "type": "dimension"
+        },
+        "container-thumbnail-title-description": {
+          "value": "{dimension.1}",
+          "type": "dimension"
+        }
+      },
+      "font-weight": {
+        "title": {
+          "value": "{typography.font-weight.medium}",
+          "type": "dimension"
+        },
+        "description": {
+          "value": "{typography.font-weight.regular}",
+          "type": "dimension"
+        },
+        "file-name": {
+          "value": "{typography.font-weight.regular}",
+          "type": "dimension"
+        }
+      },
+      "line-height": {
+        "title": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        },
+        "description": {
+          "value": "{typography.line-height.sm}",
+          "type": "dimension"
+        },
+        "title-thumbnail": {
+          "value": "{typography.line-height.xs-leading-none}",
+          "type": "dimension"
+        },
+        "description-thumbnail": {
+          "value": "{typography.line-height.xs}",
+          "type": "dimension"
+        },
+        "file-name": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        }
+      },
+      "font-size": {
+        "title": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        },
+        "description": {
+          "value": "{typography.font-size.sm}",
+          "type": "dimension"
+        },
+        "title-thumbnail": {
+          "value": "{typography.font-size.xs}",
+          "type": "dimension"
+        },
+        "description-thumbnail": {
+          "value": "{typography.font-size.xs}",
+          "type": "dimension"
+        },
+        "file-name": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        }
+      },
+      "space-x": {
+        "file-list": {
+          "value": "{space-x.3}",
           "type": "dimension"
         }
       }
