@@ -3075,7 +3075,7 @@
         }
       }
     },
-    "timepicker-Ant": {
+    "timepicker-ant": {
       "foreground": {
         "text-time-default": {
           "value": "{color.secondary-1.s-900}",
@@ -3563,24 +3563,24 @@
     },
     "drawer": {
       "background": {
-        "container": {
+        "drawer": {
           "value": "{color.base.white}",
           "type": "color"
         }
       },
       "foreground": {
-        "text-header": {
+        "text": {
           "value": "{color.secondary-1.s-900}",
           "type": "color",
           "description": "Text month, year"
         },
-        "icon-header": {
+        "icon": {
           "value": "{color.secondary-1.s-900}",
           "type": "color"
         }
       },
       "font-family": {
-        "text-title": {
+        "text": {
           "value": "{typography.font-family.primary}",
           "type": "text"
         }
@@ -3592,7 +3592,7 @@
         }
       },
       "font-size": {
-        "header": {
+        "text": {
           "value": "{typography.font-size.base}",
           "type": "dimension"
         }
@@ -3601,31 +3601,21 @@
         "icon": {
           "value": "{dimension.6}",
           "type": "dimension"
+        },
+        "container-icon": {
+          "value": "{dimension.8}",
+          "type": "dimension"
         }
       },
       "line-height": {
-        "header": {
+        "text": {
           "value": "{typography.line-height.base-leading-none}",
           "type": "dimension"
         }
       },
-      "padding": {
-        "container-icon": {
-          "value": "{px.1}",
-          "type": "dimension"
-        },
-        "header": {
-          "value": "{px.2}",
-          "type": "dimension"
-        }
-      },
       "space-x": {
-        "header-text": {
-          "value": "{space-x.1d5}",
-          "type": "dimension"
-        },
-        "header-container": {
-          "value": "{space-x.4}",
+        "header": {
+          "value": "{space-x.2}",
           "type": "dimension"
         },
         "drawer": {
@@ -3634,32 +3624,40 @@
         }
       },
       "width": {
-        "icon-container": {
-          "value": "{dimension.8}",
-          "type": "dimension"
-        },
-        "header-weight-min": {
+        "header-min": {
           "value": "{dimension.80}",
           "type": "dimension"
         }
       },
-      "height": {
-        "icon-container": {
-          "value": "{dimension.8}",
+      "padding": {
+        "header-vertical": {
+          "value": "{py.4}",
           "type": "dimension"
         },
-        "header": {
-          "value": "{dimension.8}",
+        "header-horizontal": {
+          "value": "{px.4}",
           "type": "dimension"
         },
-        "drawer-height-min": {
-          "value": "{dimension.240}",
+        "slot-horizontal": {
+          "value": "{px.4}",
+          "type": "dimension"
+        },
+        "slot-top": {
+          "value": "{px.6}",
+          "type": "dimension"
+        },
+        "slot-bottom": {
+          "value": "{px.8}",
           "type": "dimension"
         }
       },
-      "space-y": {
-        "header-container": {
-          "value": "{space-x.4}",
+      "height": {
+        "drawer-min": {
+          "value": "{dimension.225}",
+          "type": "dimension"
+        },
+        "header-min": {
+          "value": "{dimension.16}",
           "type": "dimension"
         }
       }
@@ -4122,6 +4120,10 @@
     },
     "200": {
       "value": "50rem",
+      "type": "dimension"
+    },
+    "225": {
+      "value": "56.25rem",
       "type": "dimension"
     },
     "240": {
