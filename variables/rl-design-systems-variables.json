@@ -3381,35 +3381,71 @@
     },
     "timepicker": {
       "background": {
-        "time-hover": {
+        "container-time-hover": {
           "value": "{color.secondary-2.s-200}",
           "type": "color"
         },
-        "time-background": {
-          "value": "{color.base.white}",
-          "type": "color"
-        },
-        "time-focus": {
+        "container-icon": {
           "value": "{color.secondary-2.s-200}",
           "type": "color"
         },
-        "time-focus-text": {
+        "container-icon-hover": {
           "value": "{color.secondary-2.s-300}",
+          "type": "color"
+        },
+        "container-icon-active": {
+          "value": "{color.secondary-2.s-400}",
+          "type": "color"
+        },
+        "container-timepickert": {
+          "value": "{color.base.white}",
           "type": "color"
         }
       },
       "foreground": {
-        "text-time-default": {
+        "text": {
           "value": "{color.secondary-1.s-900}",
-          "type": "color"
-        },
-        "text-time-selected": {
-          "value": "{color.base.white}",
           "type": "color"
         },
         "icon": {
           "value": "{color.secondary-4.s-400}",
           "type": "color"
+        },
+        "icon-hover": {
+          "value": "{color.secondary-1.s-900}",
+          "type": "color"
+        },
+        "border-container-icon": {
+          "value": "{color.secondary-2.s-300}",
+          "type": "color"
+        },
+        "border-container-icon-active": {
+          "value": "{color.secondary-2.s-400}",
+          "type": "color"
+        }
+      },
+      "shadow": {
+        "container-timepicker": {
+          "color": {
+            "value": "{shadow.general.color}",
+            "type": "color"
+          },
+          "x": {
+            "value": "{shadow.general.x}",
+            "type": "dimension"
+          },
+          "y": {
+            "value": "{shadow.general.y}",
+            "type": "dimension"
+          },
+          "blur": {
+            "value": "{shadow.general.blur}",
+            "type": "dimension"
+          },
+          "spread": {
+            "value": "{shadow.general.spread}",
+            "type": "dimension"
+          }
         }
       },
       "font-family": {
@@ -3425,36 +3461,76 @@
         }
       },
       "font-size": {
-        "time": {
-          "value": "{typography.font-size.base}",
+        "text": {
+          "value": "{typography.font-size.sm}",
           "type": "dimension"
         }
       },
       "line-height": {
-        "time": {
-          "value": "{typography.line-height.base-leading-none}",
+        "text": {
+          "value": "{typography.line-height.sm-leading-none}",
           "type": "dimension"
         }
       },
       "size": {
-        "Icon": {
-          "value": "{dimension.6}",
-          "type": "dimension"
-        },
-        "Icon-colon-frame": {
-          "value": "{dimension.6}",
+        "icon": {
+          "value": "{dimension.4}",
           "type": "dimension"
         }
       },
       "rounded": {
-        "Timepicker": {
+        "container-timepicker": {
           "value": "{dimension.1d5}",
           "type": "dimension"
         }
       },
-      "date 2": {
-        "value": "{rounded.full}",
-        "type": "dimension"
+      "padding": {
+        "container-icon-horizontal": {
+          "value": "{px.0d5}",
+          "type": "dimension"
+        },
+        "container-time-horizontal": {
+          "value": "{pl.8}",
+          "type": "dimension"
+        },
+        "container-colon-horizontal": {
+          "value": "{px.0d5}",
+          "type": "dimension"
+        },
+        "container-period-horizontal": {
+          "value": "{px.4}",
+          "type": "dimension"
+        },
+        "container-icon-arrow-container-horizontal": {
+          "value": "{px.5}",
+          "type": "dimension"
+        }
+      },
+      "height": {
+        "container-time": {
+          "value": "{dimension.10}",
+          "type": "dimension"
+        },
+        "icon-arrow-container": {
+          "value": "{dimension.2}",
+          "type": "dimension"
+        }
+      },
+      "width": {
+        "text-time": {
+          "value": "{dimension.5}",
+          "type": "dimension"
+        },
+        "icon-arrow-container": {
+          "value": "{dimension.3d5}",
+          "type": "dimension"
+        }
+      },
+      "border": {
+        "container-icon": {
+          "value": "{border.pixel}",
+          "type": "dimension"
+        }
       }
     },
     "rich-text-editor": {
