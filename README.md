@@ -220,7 +220,7 @@
 
 * ห้ามตั้งชื่อ Varaible เหมือนกับชื่อ Key ของไฟล์ variables.json ได้แก่ value, type ถ้ามีการตั้งต้องเพิ่ม Text เข้าไปเป็น Prefix หรือ Suffix เช่น text-value หรือ value-text [กดดู Video แสดง RCA ที่นี่](https://drive.google.com/file/d/1YF2C-tFXsg4yhNU5NsP45U-nwcix0Amd/view?usp=sharing)
 
-  ![Variable naming issue](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-naming-issue.png)
+  ![Variable naming issue](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-naming-issue.jpg)
 
 ### การตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure
 * Coming soon
