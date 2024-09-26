@@ -64,7 +64,6 @@
 
 ![Token studio](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/tokens-studio-3.png)
 
-
 4. กด "Import all"
 
 ![Token studio](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/tokens-studio-4.png)
@@ -216,6 +215,12 @@
     - เลข 400 ของ Font weight ไม่ใช้ Variable เพราะ Style dictionary แปลง 400 มาเป็น rem unit ซึ่งนำมาใช้เป็น Value ของ Font weight ไม่ได้
 
   - ในกรณีตั้งค่า Text style (ระดับ Primitive และ Semantic) ตาม Document ของ Typography ใน Design systems เรียบร้อยแล้ว สามารถข้ามขั้นตอนการนำ Variables มาใช้งานตรงๆ ได้เลย โดยการใช้ mixins แทน ซึ่งทำตามขั้นตอน ดังนี้ [1] หลังจาก Copy & Paste ค่า Variables ของ Text มาแล้วให้ลบ CSS properties ออก [2] Copy Text style name ที่เป็น Comment และมีลักษณะ "semantic/body/md-leading-none" [3] พิมพ์ @include [4] Paste text style name [5] กด Ctrl + Spacebar [6] เลือก Mixins ที่แนะนำขึ้นมาให้ตรงกับ Text style name [7] ลบ Text ที่อยู่ด้านของ typography/... ออก [กดดู Video แสดงขั้นตอนตามลำดับที่นี่](https://drive.google.com/file/d/1HAP61CANxI5SX_kIFopzlPNQ9kRb8eMl/view?usp=drive_link)
+
+### การตั้งชื่อ Variable เพื่อไม่ให้เกิดการแสดงผลเป็น [object Object] ในไฟล์ _variables.scss เมื่อทำการ Run style-dictionary กับไฟล์ variables.json
+
+* ห้ามตั้งชื่อ Varaible เหมือนกับชื่อ Key ของไฟล์ variables.json ได้แก่ value, type ถ้ามีการตั้งต้องเพิ่ม Text เข้าไปเป็น Prefix หรือ Suffix เช่น text-value หรือ value-text [กดดู Video แสดง RCA ที่นี่](https://drive.google.com/file/d/1YF2C-tFXsg4yhNU5NsP45U-nwcix0Amd/view?usp=sharing)
+
+  ![Variable naming issue](https://raw.githubusercontent.com/Nattarat/sync-design-to-development/main/images/variable-naming-issue.png)
 
 ### การตั้งค่า Tailwind CSS class เพิ่มเติมจาก Variables เพื่อใช้สร้าง Layout structure
 * Coming soon
