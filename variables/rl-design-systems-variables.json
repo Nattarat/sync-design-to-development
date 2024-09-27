@@ -1267,7 +1267,7 @@
           }
         },
         "form": {
-          "value": {
+          "text-value": {
             "value": "{color.secondary-2.s-900}",
             "type": "color"
           },
@@ -1778,233 +1778,12 @@
     }
   },
   "specific": {
-    "datepicker": {
-      "background": {
-        "date-current": {
-          "value": "{color.secondary-16.s-500}",
-          "type": "color"
-        },
-        "date-adjacent-month-hover": {
-          "value": "{color.secondary-2.s-200}",
-          "type": "color"
-        },
-        "container": {
-          "value": "{color.base.white}",
-          "type": "color"
-        },
-        "date-current-hover": {
-          "value": "{color.secondary-16.s-700}",
-          "type": "color"
-        },
-        "date-hover": {
-          "value": "{color.secondary-2.s-200}",
-          "type": "color"
-        }
-      },
-      "foreground": {
-        "text-date-current": {
-          "value": "{color.base.white}",
-          "type": "color"
-        },
-        "text-date": {
-          "value": "{color.secondary-1.s-900}",
-          "type": "color"
-        },
-        "text-date-adjacent-month": {
-          "value": "{color.secondary-1.s-400}",
-          "type": "color"
-        },
-        "border-date-selected": {
-          "value": "{color.secondary-16.s-300}",
-          "type": "color"
-        },
-        "icon-inactive": {
-          "value": "{color.secondary-4.s-400}",
-          "type": "color"
-        },
-        "text-link": {
-          "value": "{color.secondary-16.s-500}",
-          "type": "color"
-        },
-        "text-date-disable": {
-          "value": "{color.secondary-2.s-300}",
-          "type": "color"
-        },
-        "text-date-week": {
-          "value": "{color.secondary-1.s-400}",
-          "type": "color"
-        },
-        "border-date-selected-focus": {
-          "value": "{color.secondary-16.s-300}",
-          "type": "color"
-        },
-        "text-header": {
-          "value": "{color.secondary-1.s-900}",
-          "type": "color",
-          "description": "Text month, year"
-        },
-        "border-container": {
-          "value": "{color.secondary-4.s-100}",
-          "type": "color"
-        },
-        "icon-arrow-container": {
-          "value": "{color.base.white}",
-          "type": "color"
-        }
-      },
-      "font-family": {
-        "text": {
-          "value": "{typography.font-family.primary}",
-          "type": "text"
-        }
-      },
-      "font-size": {
-        "date": {
-          "value": "{typography.font-size.sm}",
-          "type": "dimension"
-        },
-        "header": {
-          "value": "{typography.font-size.base}",
-          "type": "dimension"
-        },
-        "footer": {
-          "value": "{typography.font-size.base}",
-          "type": "dimension"
-        },
-        "weekday": {
-          "value": "{typography.font-size.sm}",
-          "type": "dimension"
-        }
-      },
-      "font-weight": {
-        "text": {
-          "value": "{typography.font-weight.regular}",
-          "type": "dimension"
-        }
-      },
-      "size": {
-        "date": {
-          "value": "{dimension.6}",
-          "type": "dimension"
-        },
-        "icon-arrow-month": {
-          "value": "{dimension.6}",
-          "type": "dimension"
-        },
-        "icon-arrow-month-select": {
-          "value": "{dimension.5}",
-          "type": "dimension"
-        },
-        "icon-arrow-year": {
-          "value": "{dimension.6}",
-          "type": "dimension"
-        }
-      },
-      "line-height": {
-        "date": {
-          "value": "{typography.line-height.sm-leading-none}",
-          "type": "dimension"
-        },
-        "header": {
-          "value": "{typography.line-height.base-leading-none}",
-          "type": "dimension"
-        },
-        "footer": {
-          "value": "{typography.line-height.base-leading-none}",
-          "type": "dimension"
-        },
-        "weekday": {
-          "value": "{typography.line-height.sm-leading-none}",
-          "type": "dimension"
-        }
-      },
-      "border": {
-        "date": {
-          "value": "{border.pixel}",
-          "type": "dimension"
-        },
-        "container": {
-          "value": "{border.pixel}",
-          "type": "dimension"
-        }
-      },
-      "padding": {
-        "header-horizontal": {
-          "value": "{px.2}",
-          "type": "dimension"
-        },
-        "header-vertical": {
-          "value": "{py.2}",
-          "type": "dimension"
-        },
-        "footer-vertical": {
-          "value": "{py.2d5}",
-          "type": "dimension"
-        },
-        "container-icon-arrow-horizontal": {
-          "value": "{px.5}",
-          "type": "dimension"
-        },
-        "container-body-horizontal": {
-          "value": "{px.3}",
-          "type": "dimension"
-        },
-        "container-body-vertical": {
-          "value": "{py.2}",
-          "type": "dimension"
-        },
-        "container-weekdays-vertical": {
-          "value": "{py.2}",
-          "type": "dimension"
-        },
-        "container-dates-vertical": {
-          "value": "0.1875rem",
-          "type": "dimension"
-        }
-      },
-      "space-x": {
-        "header": {
-          "value": "{space-x.4}",
-          "type": "dimension"
-        },
-        "month-year": {
-          "value": "{space-x.3}",
-          "type": "dimension"
-        },
-        "month-icon-arrow": {
-          "value": "{space-x.0d5}",
-          "type": "dimension"
-        },
-        "year-icon-arrow": {
-          "value": "{space-x.0d5}",
-          "type": "dimension"
-        }
-      },
-      "rounded": {
-        "date": {
-          "value": "{rounded.full}",
-          "type": "dimension"
-        },
-        "container": {
-          "value": "{rounded.md}",
-          "type": "dimension"
-        }
-      },
-      "width": {
-        "icon-arrow-container": {
-          "value": "{dimension.3d5}",
-          "type": "dimension"
-        }
-      },
-      "height": {
-        "icon-arrow-container": {
-          "value": "{dimension.2}",
-          "type": "dimension"
-        }
-      }
-    },
     "button": {
       "primary": {
+        "background": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        },
         "foreground": {
           "value": "{color.base.white}",
           "type": "color"
@@ -3075,6 +2854,231 @@
         }
       }
     },
+    "datepicker": {
+      "foreground": {
+        "text-date-current": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "text-date": {
+          "value": "{color.secondary-1.s-900}",
+          "type": "color"
+        },
+        "text-date-adjacent-month": {
+          "value": "{color.secondary-1.s-400}",
+          "type": "color"
+        },
+        "border-date-selected": {
+          "value": "{color.secondary-16.s-300}",
+          "type": "color"
+        },
+        "icon-inactive": {
+          "value": "{color.secondary-4.s-400}",
+          "type": "color"
+        },
+        "text-link": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        },
+        "text-date-disable": {
+          "value": "{color.secondary-2.s-300}",
+          "type": "color"
+        },
+        "text-date-week": {
+          "value": "{color.secondary-1.s-400}",
+          "type": "color"
+        },
+        "border-date-selected-focus": {
+          "value": "{color.secondary-16.s-300}",
+          "type": "color"
+        },
+        "text-header": {
+          "value": "{color.secondary-1.s-900}",
+          "type": "color",
+          "description": "Text month, year"
+        },
+        "border-container": {
+          "value": "{color.secondary-4.s-100}",
+          "type": "color"
+        },
+        "icon-arrow-container": {
+          "value": "{color.base.white}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "date-adjacent-month-hover": {
+          "value": "{color.secondary-2.s-200}",
+          "type": "color"
+        },
+        "container": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "date-current-hover": {
+          "value": "{color.secondary-16.s-700}",
+          "type": "color"
+        },
+        "date-hover": {
+          "value": "{color.secondary-2.s-200}",
+          "type": "color"
+        },
+        "date-current": {
+          "value": "{color.secondary-16.s-500}",
+          "type": "color"
+        }
+      },
+      "font-family": {
+        "text": {
+          "value": "{typography.font-family.primary}",
+          "type": "text"
+        }
+      },
+      "font-size": {
+        "date": {
+          "value": "{typography.font-size.sm}",
+          "type": "dimension"
+        },
+        "header": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        },
+        "footer": {
+          "value": "{typography.font-size.base}",
+          "type": "dimension"
+        },
+        "weekday": {
+          "value": "{typography.font-size.sm}",
+          "type": "dimension"
+        }
+      },
+      "font-weight": {
+        "text": {
+          "value": "{typography.font-weight.regular}",
+          "type": "dimension"
+        }
+      },
+      "size": {
+        "date": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        },
+        "icon-arrow-month": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        },
+        "icon-arrow-month-select": {
+          "value": "{dimension.5}",
+          "type": "dimension"
+        },
+        "icon-arrow-year": {
+          "value": "{dimension.6}",
+          "type": "dimension"
+        }
+      },
+      "line-height": {
+        "date": {
+          "value": "{typography.line-height.sm-leading-none}",
+          "type": "dimension"
+        },
+        "header": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        },
+        "footer": {
+          "value": "{typography.line-height.base-leading-none}",
+          "type": "dimension"
+        },
+        "weekday": {
+          "value": "{typography.line-height.sm-leading-none}",
+          "type": "dimension"
+        }
+      },
+      "border": {
+        "date": {
+          "value": "{border.pixel}",
+          "type": "dimension"
+        },
+        "container": {
+          "value": "{border.pixel}",
+          "type": "dimension"
+        }
+      },
+      "padding": {
+        "header-horizontal": {
+          "value": "{px.2}",
+          "type": "dimension"
+        },
+        "header-vertical": {
+          "value": "{py.2}",
+          "type": "dimension"
+        },
+        "footer-vertical": {
+          "value": "{py.2d5}",
+          "type": "dimension"
+        },
+        "container-icon-arrow-horizontal": {
+          "value": "{px.5}",
+          "type": "dimension"
+        },
+        "container-body-horizontal": {
+          "value": "{px.3}",
+          "type": "dimension"
+        },
+        "container-body-vertical": {
+          "value": "{py.2}",
+          "type": "dimension"
+        },
+        "container-weekdays-vertical": {
+          "value": "{py.2}",
+          "type": "dimension"
+        },
+        "container-dates-vertical": {
+          "value": "0.1875rem",
+          "type": "dimension"
+        }
+      },
+      "space-x": {
+        "header": {
+          "value": "{space-x.4}",
+          "type": "dimension"
+        },
+        "month-year": {
+          "value": "{space-x.3}",
+          "type": "dimension"
+        },
+        "month-icon-arrow": {
+          "value": "{space-x.0d5}",
+          "type": "dimension"
+        },
+        "year-icon-arrow": {
+          "value": "{space-x.0d5}",
+          "type": "dimension"
+        }
+      },
+      "rounded": {
+        "date": {
+          "value": "{rounded.full}",
+          "type": "dimension"
+        },
+        "container": {
+          "value": "{rounded.md}",
+          "type": "dimension"
+        }
+      },
+      "width": {
+        "icon-arrow-container": {
+          "value": "{dimension.3d5}",
+          "type": "dimension"
+        }
+      },
+      "height": {
+        "icon-arrow-container": {
+          "value": "{dimension.2}",
+          "type": "dimension"
+        }
+      }
+    },
     "timepicker-ant": {
       "foreground": {
         "text-time-default": {
@@ -3557,7 +3561,7 @@
           "value": "{color.secondary-2.s-300}",
           "type": "color"
         },
-        "value": {
+        "text-value": {
           "value": "{color.secondary-1.s-700}",
           "type": "color"
         },
@@ -3734,6 +3738,42 @@
         },
         "header-min": {
           "value": "{dimension.16}",
+          "type": "dimension"
+        }
+      }
+    },
+    "progress": {
+      "bg": {
+        "container-main": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        }
+      },
+      "space": {
+        "x": {
+          "container-main": {
+            "value": "{space-x.2}",
+            "type": "dimension"
+          }
+        }
+      },
+      "padding": {
+        "px": {
+          "container-main": {
+            "value": "{px.2}",
+            "type": "dimension"
+          }
+        },
+        "py": {
+          "container-main": {
+            "value": "{py.2}",
+            "type": "dimension"
+          }
+        }
+      },
+      "rounded": {
+        "container-main": {
+          "value": "{rounded.lg}",
           "type": "dimension"
         }
       }
