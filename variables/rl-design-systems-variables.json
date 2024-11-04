@@ -3062,7 +3062,7 @@
       },
       "rounded": {
         "date": {
-          "value": "{rounded.full}",
+          "value": "{rounded.md}",
           "type": "dimension"
         },
         "container": {
