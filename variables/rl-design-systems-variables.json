@@ -3599,10 +3599,6 @@
         "icon": {
           "value": "{dimension.6}",
           "type": "dimension"
-        },
-        "container-icon": {
-          "value": "{dimension.8}",
-          "type": "dimension"
         }
       },
       "line-height": {
@@ -3758,6 +3754,24 @@
       "border": {
         "container-bounding": {
           "value": "{border.pixel}",
+          "type": "dimension"
+        }
+      }
+    },
+    "range": {
+      "color": {
+        "background-bar": {
+          "value": "{color.secondary-3.s-300}",
+          "type": "color"
+        },
+        "background-range": {
+          "value": "{color.primary.16}",
+          "type": "color"
+        }
+      },
+      "size": {
+        "container-button": {
+          "value": "{dimension.6}",
           "type": "dimension"
         }
       }
